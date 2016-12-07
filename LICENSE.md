@@ -1,0 +1,1 @@
+The Code is licensed under the [![image](https://licensebuttons.net/p/zero/1.0/88x31.png "CC0")-License](https://creativecommons.org/publicdomain/zero/1.0/). Feel free to use it!
