@@ -6,8 +6,15 @@ Bless everyone using this redirect service!
 -->
 <head>
 <script>
-if(window.location.hash != "") {
-	window.location.href = window.location.hash.replace(/^#/, "");
+var url = window.location.hash.replace(/^#/, "");
+if(url != "") {
+	window.location.href = url;
+} else { //try GET-Params ... not that secure but an fallback because # aren't always taken in 302/301-redirects in Safari
+	url = document.location.search.replace(/^\?/, "");
+	
+	if(url != "") {
+		window.location.href = url;
+	}
 }
 </script>
 </head>
