@@ -1,0 +1,3 @@
+# Feel free to add your own or delete 404-entries
+https://thomas131.github.com/hide_referer/
+http://t131.us.to/hide_referer/
