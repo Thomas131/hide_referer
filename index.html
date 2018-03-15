@@ -10,7 +10,7 @@ var url = window.location.hash.replace(/^#/, "");
 if(url != "") {
 	window.location.href = url;
 } else { //try GET-Params ... not that secure but an fallback because # aren't always taken in 302/301-redirects in Safari
-	url = document.location.search.replace(/^.*\?/, "");
+	url = String(document.location).replace(/^.*?\?/, "");
 	
 	if(url != "") {
 		window.location.href = url;
